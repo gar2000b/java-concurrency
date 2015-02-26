@@ -6,11 +6,11 @@ import java.util.Scanner;
 // properly updated by the main Thread and that the proc1 Thread isn't optimising use of this variable and 
 // sees the update straight away.
 class Processor extends Thread {
-	
+
 	private volatile boolean running = true;
-	
+
 	public void run() {
-		while(running) {
+		while (running) {
 			System.out.println("Hello");
 			try {
 				Thread.sleep(100);
@@ -19,7 +19,7 @@ class Processor extends Thread {
 			}
 		}
 	}
-	
+
 	public void shutdown() {
 		running = false;
 	}
@@ -29,10 +29,10 @@ public class App {
 	public static void main(String[] args) {
 		Processor proc1 = new Processor();
 		proc1.start();
-		
+
 		Scanner scanner = new Scanner(System.in);
 		scanner.nextLine();
-		
+
 		proc1.shutdown();
 	}
 }
