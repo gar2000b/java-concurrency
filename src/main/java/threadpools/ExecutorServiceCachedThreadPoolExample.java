@@ -9,9 +9,8 @@ import threadpools.processor.Processor;
 /**
  * This example makes use of Thread Pools via the Executor Service.
  * 
- * In essence, you have a pool of available Thread Workers of a
- * pre-defined size (in our case two), that will spawn off a Thread
- * Process against a Threaded objected.
+ * In essence, you have a pool of available Thread Workers that will
+ * spawn off a Thread Process against a Threaded objected.
  * 
  * The cached thread pool will spawn as many threads as is needed.
  * 
