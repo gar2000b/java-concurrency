@@ -9,12 +9,14 @@ import java.util.concurrent.TimeUnit;
  * ExecutorServiceCachedThreadPoolExample.
  * 
  * This time, we don't use the Runnable processor but a simple method
- * testLamba() to act as our process. The Lambda expression basically
- * provides a syntactic reduction of an anonymous implementation of
- * the Runnable Interface.
+ * testLamba() to act as our process.
  * 
- * In other words, it turns testLambda() into a Runnable type under the
- * hood. Extremely powerful.
+ * The Lambda expression in the constructor basically provides a
+ * syntactic reduction with an anonymous implementation of the
+ * Runnable Interface for testLambda().
+ * 
+ * In other words, it turns testLambda() into a Runnable type under
+ * the hood. Extremely powerful.
  * 
  * @author Digilogue on 18/02/17
  *
