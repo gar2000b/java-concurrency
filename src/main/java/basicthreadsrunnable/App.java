@@ -1,5 +1,13 @@
-package demo2;
+package basicthreadsrunnable;
 
+/**
+ * 
+ * This example creates 2 basic Threads in Java with Runnable
+ * interface.
+ * 
+ * @author Digilogue
+ *
+ */
 class Runner implements Runnable {
 
 	@Override

@@ -1,15 +1,25 @@
-package demo7;
+package independentlocks;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-// There is only one intrinsic lock for the worker object. In this example, you can see that we spawn off two Threads. 
-// We join both Threads to the main Thread (as we saw before). We had to make our target methods synchronized in order
-// to eliminate the interference problem. So this works fine but it takes around 4 seconds. The issue is (as mentioned above)
-// that there is only one intrinsic lock per object. So we have two Threads vying for the one locked resource.
-// demo 7 will demonstrate how to create multiple locks to speed up this problem.
-// Note: lock objects in this context are simply objects that we can lock against.
+/**
+ * 
+ * Making use of lock objects and synchronized blocks rather than
+ * synchronized methods.
+ * 
+ * In this example, you can see that we spawn off two Threads. We join
+ * both Threads to the main Thread (as we saw before). We had to make
+ * our target methods synchronized in order to eliminate the
+ * interference problem.
+ * 
+ * So this works fine and it takes around 2 seconds as we are now
+ * using two independent locks.
+ * 
+ * Note: lock objects in this context are simply objects that we can
+ * lock against.
+ **/
 public class Worker {
 
 	private Random random = new Random();
@@ -83,7 +93,6 @@ public class Worker {
 		long end = System.currentTimeMillis();
 
 		System.out.println("Time take: " + (end - start));
-		System.out.println("List1: " + list1.size() + "; List2: "
-				+ list2.size());
+		System.out.println("List1: " + list1.size() + "; List2: " + list2.size());
 	}
 }

@@ -1,8 +1,14 @@
-package demo5;
+package synchronizeddemo;
 
-// Making use of synchronised - means that only one Thread can acquire the intrinsic lock of this object at a time.
-// also making use of join() method against our Threads. Join basically halts the current Thread (in our case main)
-// until the Threads (which execute the join method) have completed. Basically a stopping function.
+/**
+ * Making use of synchronised:
+ * 
+ * Means that only one Thread can acquire the intrinsic lock of this
+ * object at a time. also making use of join() method against our
+ * Threads. Join basically halts the current Thread (in our case main)
+ * until the Threads (which execute the join method) have completed.
+ * Basically a stopping function.
+ **/
 public class App {
 
 	private int count = 0;

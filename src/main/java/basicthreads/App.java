@@ -1,6 +1,11 @@
-package demo1;
+package basicthreads;
 
-// This example creates 2 basic Threads in Java.
+/**
+ * 
+ * This example creates 2 basic Threads in Java.
+ * @author Digilogue
+ *
+ */
 class Runner extends Thread {
 	@Override
 	public void run() {

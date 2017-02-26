@@ -1,5 +1,12 @@
-package demo3;
+package anonoymousclassthread;
 
+/**
+ * 
+ * Creating Thread with anonymous class.
+ * 
+ * @author Digilogue
+ *
+ */
 public class App {
 	public static void main(String[] args) {
 		Thread t1 = new Thread(new Runnable() {

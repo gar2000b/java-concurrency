@@ -1,4 +1,4 @@
-package demo7;
+package independentlocks;
 
 // See the Worker Class for a description.
 public class App {

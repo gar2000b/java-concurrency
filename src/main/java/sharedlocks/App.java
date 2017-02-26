@@ -1,4 +1,4 @@
-package demo6;
+package sharedlocks;
 
 // See the Worker Class for a description.
 public class App {
