@@ -1,6 +1,15 @@
 package waitandnotifyblockingqueue;
 
-// Low level wait and notify -> explained in Processor class.
+/**
+ * Low level wait and notify -> explained in Processor class.
+ * 
+ * This class has a main that simple spins up x2 threads that
+ * endlessly call produce() and consume() against the processor
+ * instance.
+ * 
+ * @author Digilogue
+ *
+ */
 public class App {
 	public static void main(String[] args) throws InterruptedException {
 
