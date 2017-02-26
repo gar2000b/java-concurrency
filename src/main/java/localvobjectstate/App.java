@@ -1,11 +1,23 @@
-package demo13;
+package localvobjectstate;
 
 /**
  * 
- * This app demonstrates how local state is impacted when two Threads vie
- * for the same resource. Basically the conclusion is that local variables /
- * local references are not affected, however instance variables / instance 
- * references are.
+ * This app demonstrates how local v object state is impacted when two
+ * Threads vie for the same resource.
+ * 
+ * Local state = variables and references declared within an instance
+ * method.
+ * 
+ * Object state = instance variables and references declared within
+ * the object or class.
+ * 
+ * Basically the conclusion is that local variables / local references
+ * are not affected, however instance variables / instance references
+ * are.
+ * 
+ * In other words: Object state (not Local state) is impacted by vying
+ * threads and it is this state we need to protect with synchronized
+ * blocks and methods etc.
  * 
  * @author Digilogue
  *
