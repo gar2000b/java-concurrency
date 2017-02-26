@@ -11,8 +11,8 @@ import java.util.Random;
  * 
  * In this example, you can see that we spawn off two Threads. We join
  * both Threads to the main Thread (as we saw before). We had to make
- * our target methods synchronized in order to eliminate the
- * interference problem.
+ * our target methods use synchronized blocks in order to eliminate
+ * the interference problem.
  * 
  * So this works fine and it takes around 2 seconds as we are now
  * using two independent locks.
