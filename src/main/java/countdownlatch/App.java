@@ -1,14 +1,26 @@
-package demo9;
+package countdownlatch;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-// Count down latch example. Blocks a thread until latch has reached 0.
-// You block the Thread with latch.await(); The following three lines make this sequence clearer:
-// CountDownLatch latch = new CountDownLatch(3);
-// latch.countDown(); - Threads spawn off, have a handle on the latch and counts it down.
-// latch.await(); - acts like a blocking call until the latch reaches 0.
+/**
+ * Count down latch example. Blocks a thread until latch has reached
+ * 0.
+ * 
+ * You block the Thread with latch.await(); The following three lines
+ * make this sequence clearer:
+ * 
+ * CountDownLatch latch = new CountDownLatch(3);
+ * 
+ * latch.countDown();
+ * 
+ * - Threads spawn off, have a handle on the latch and counts it down.
+ * 
+ * latch.await();
+ * 
+ * - acts like a blocking call until the latch reaches 0.
+ **/
 class Processor implements Runnable {
 
 	private CountDownLatch latch;
@@ -47,5 +59,6 @@ public class App {
 		}
 
 		System.out.println("Completed!!!");
+		executorService.shutdown();
 	}
 }
