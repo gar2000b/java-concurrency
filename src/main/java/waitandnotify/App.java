@@ -1,4 +1,4 @@
-package demo11;
+package waitandnotify;
 
 // Wait and notify -> explained in Processor class.
 public class App {

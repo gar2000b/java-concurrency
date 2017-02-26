@@ -7,7 +7,7 @@ package demo13;
  * local references are not affected, however instance variables / instance 
  * references are.
  * 
- * @author gary
+ * @author Digilogue
  *
  */
 public class App {
