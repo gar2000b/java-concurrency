@@ -1,4 +1,4 @@
-package demo12;
+package waitandnotifyblockingqueue;
 
 // Low level wait and notify -> explained in Processor class.
 public class App {
@@ -11,7 +11,8 @@ public class App {
 			@Override
 			public void run() {
 				try {
-					processor.produce();
+					while (true)
+						processor.produce();
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
@@ -23,7 +24,8 @@ public class App {
 			@Override
 			public void run() {
 				try {
-					processor.consume();
+					while (true)
+						processor.consume();
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
