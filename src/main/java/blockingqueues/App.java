@@ -58,6 +58,7 @@ public class App {
 		Random random = new Random();
 		while (true) {
 			queue.put(random.nextInt(100)); // non-blocking
+			// queue.offer(random.nextInt(100)); // non-blocking
 		}
 	}
 
