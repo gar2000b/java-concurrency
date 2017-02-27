@@ -2,7 +2,7 @@ package reentrantlock;
 
 /**
  * The reentrant lock is an object oriented equivalent of the
- * synchronised locking mechanism.
+ * synchronized locking mechanism.
  * 
  * The synchronised block assumes that you want to lock and unlock
  * objects declaratively not procedurally.

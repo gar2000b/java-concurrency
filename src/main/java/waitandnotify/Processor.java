@@ -6,7 +6,7 @@ import java.util.Scanner;
  * wait() and notify() example.
  * 
  * wait() puts the current thread into a waiting state - essentially
- * halts execution at that point until it is notified to aquire the
+ * halts execution at that point until it is notified to acquire the
  * monitor again.
  * 
  * notify() wakes up a single thread that is waiting on this object's
