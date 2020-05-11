@@ -13,6 +13,15 @@ package threadlocal;
  * behaving as they are expected and retain only their copy of their respective
  * variable type for their own particular thread.
  * 
+ * ThreadLocals are great, they promote memory efficiency, thread safety, it
+ * provides a thread context for multiple classes per Thread flow and helps to
+ * boost performance as all classes in that flow can reference the same type
+ * without passing everything by reference at each hop.
+ * 
+ * In a nutshell, transaction state can be preserved, accessed and modified much
+ * easier (per thread of control) for the duration of its potentially short
+ * life-cycle.
+ * 
  * @author gar20
  *
  */
